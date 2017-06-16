@@ -19,3 +19,8 @@ h1 {
 #incorrect, #correct {
 	display: ;
 }
+
+#perfect {
+	font-size: 50px;
+	color: #55f704;
+}

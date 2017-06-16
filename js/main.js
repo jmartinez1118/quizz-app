@@ -17,7 +17,7 @@ var questions = [
 	},
 	{
 		question: "if x = 10, what is x ?",
-		answer: [ 10, + "ten" ]
+		answer: 10
 	},
 	{
 		question: "x = 10, is x > 21 ?",
@@ -64,12 +64,24 @@ function checkAnswers() {
 		// check to see if variable "answer" is stored
 		console.log("correct answer is  " + correctAnswer)
 
-		if (guess == correctAnswer){
+		var perfect = 7 
+
+		if (guess == correctAnswer || correct >= perfect){
 			//do something here
 			correct++ ;
+			document.getElementById("perfect").textContent = "PERFECT SCORE!! "
+
+
 		} else {
 			incorrect++ ;
 		}
+
+		
+		
+
+	
+
+
 
 	}
 
