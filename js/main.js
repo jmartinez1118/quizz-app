@@ -66,36 +66,34 @@ function checkAnswers() {
 
 		var perfect = 7 
 
-		if (guess == correctAnswer || correct >= perfect){
+		if (guess == correctAnswer){
 			//do something here
 			correct++ ;
-			document.getElementById("perfect").textContent = "PERFECT SCORE!! "
-
-
 		} else {
 			incorrect++ ;
 		}
 
+		if(correct == perfect){
+			// if perfect score show "perfec score" on screen 
+			document.getElementById("perfect").textContent = "PERFECT SCORE!! "
+		}
 		
-		
-
 	
 
 
-
-	}
-
 		// show amount of correct and incorrect 
 		document.getElementById("correct").textContent = "CORRECT " + correct;
+		// document.getElementById("correct").style.display = block;
 		document.getElementById("incorrect").textContent = "INCORRECT " + incorrect;
 
-	return;
-
-		
+		return
+	}
 }
 
+		
 
-// get some sleep. tomorrow delete this and do it again!!!!!
+
+
 
 	
 
